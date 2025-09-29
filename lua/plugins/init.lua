@@ -1,3 +1,4 @@
+local lazy = require "lazy"
 return {
   {
     "stevearc/conform.nvim",
@@ -12,7 +13,10 @@ return {
       require "configs.lspconfig"
     end,
   },
-
+  {
+    "andweeb/presence.nvim",
+    lazy = false,
+  }
   -- {
   -- 	"nvim-treesitter/nvim-treesitter",
   -- 	opts = {
